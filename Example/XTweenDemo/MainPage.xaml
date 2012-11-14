@@ -1,0 +1,35 @@
+﻿<Page
+    x:Class="XTweenDemo.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:XTweenDemo"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+
+        <Button Content="SimpleTween" HorizontalAlignment="Stretch" Margin="10,10,10,10" VerticalAlignment="Stretch" Background="RoyalBlue" Tapped="PlayAnimation1"/>
+        <Button Content="SerialTweens" HorizontalAlignment="Stretch" Margin="10,10,10,10" VerticalAlignment="Stretch" Background="OrangeRed" Grid.Column="1" Tapped="PlayAnimation2"/>
+        <Button Content="ParallelTweens" HorizontalAlignment="Stretch" Margin="10,10,10,10" VerticalAlignment="Stretch" Background="ForestGreen" Grid.Column="2" Tapped="PlayAnimation3"/>
+        <Button Content="AdvancedTweens" HorizontalAlignment="Stretch" Margin="10,10,10,10" VerticalAlignment="Stretch" Background="YellowGreen" Grid.Column="3" Tapped="PlayAnimation4"/>
+
+        <Canvas Grid.Row="1" Grid.ColumnSpan="4" Background="White">
+            <Rectangle x:Name="Target1" Fill="RoyalBlue" Stroke="Black" Width="100" Height="100" Canvas.Left="10" Canvas.Top="10" />
+            <Rectangle x:Name="Target2" Fill="OrangeRed" Stroke="Black" Width="100" Height="100" Canvas.Left="356" Canvas.Top="10" />
+            <Rectangle x:Name="Target3" Fill="ForestGreen" Stroke="Black" Width="100" Height="100" Canvas.Left="697" Canvas.Top="10" />
+            <Rectangle x:Name="Target4" Fill="YellowGreen" Stroke="Black" Width="100" Height="100" Canvas.Left="1038" Canvas.Top="10" />
+        </Canvas>
+        
+    </Grid>
+</Page>
