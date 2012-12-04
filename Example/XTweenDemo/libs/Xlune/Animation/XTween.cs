@@ -148,11 +148,11 @@ namespace Xlune.Animation
         {
             add
             {
-                onStarted_ += new EventHandler(value);
+                onStarted_ += value;
             }
             remove
             {
-                onStarted_ -= new EventHandler(value);
+                onStarted_ -= value;
             }
         }
         //Paused
@@ -160,11 +160,11 @@ namespace Xlune.Animation
         {
             add
             {
-                onPaused_ += new EventHandler(value);
+                onPaused_ += value;
             }
             remove
             {
-                onPaused_ -= new EventHandler(value);
+                onPaused_ -= value;
             }
         }
         //Resumed
@@ -172,11 +172,11 @@ namespace Xlune.Animation
         {
             add
             {
-                onResumed_ += new EventHandler(value);
+                onResumed_ += value;
             }
             remove
             {
-                onResumed_ -= new EventHandler(value);
+                onResumed_ -= value;
             }
         }
         //Stopped
@@ -184,11 +184,11 @@ namespace Xlune.Animation
         {
             add
             {
-                onStopped_ += new EventHandler(value);
+                onStopped_ += value;
             }
             remove
             {
-                onStopped_ -= new EventHandler(value);
+                onStopped_ -= value;
             }
         }
         //Completed
@@ -196,11 +196,11 @@ namespace Xlune.Animation
         {
             add
             {
-                onCompleted_ += new EventHandler(value);
+                onCompleted_ += value;
             }
             remove
             {
-                onCompleted_ -= new EventHandler(value);
+                onCompleted_ -= value;
             }
         }
 
